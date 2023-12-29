@@ -1,4 +1,0 @@
----
-bin_directory: "{{ dotfiles_user_home }}/.local/bin"
-cdg_paths_global: /etc/cdg_paths
-cdg_paths_user: "{{ dotfiles_user_home }}/.cdg_paths"

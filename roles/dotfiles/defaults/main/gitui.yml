@@ -1,3 +1,0 @@
----
-gitui_config: "{{ xdg_config_dir }}/gitui"
-gitui_config_file: "{{ gitui_config }}/key_bindings.ron"

@@ -1,4 +1,0 @@
----
-clifm_download_url: https://github.com/leo-arch/clifm.git
-clifm_install_prefix: "{{ bin_directory }}"
-clifm_config_file: "{{ xdg_config_dir }}/clifm/profiles/{{ ansible_env.USER }}/clifmrc"

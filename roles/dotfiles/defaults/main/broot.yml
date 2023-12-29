@@ -1,3 +1,0 @@
----
-broot_config: "{{ xdg_config_dir }}/broot"
-broot_config_file: "{{ broot_config }}/conf.hjson"

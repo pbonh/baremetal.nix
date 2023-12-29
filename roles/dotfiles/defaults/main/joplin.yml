@@ -1,3 +1,0 @@
----
-joplin_exe: "{{ nix_bin }}/joplin"
-joplin_config_dir: "{{ xdg_config_dir }}/joplin"

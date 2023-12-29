@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-exec env XDG_CONFIG_HOME="{{ nvim_xdg_profile_dir['config'] }}/{{ nvim_profile_name }}" \
-         XDG_DATA_HOME="{{ nvim_xdg_profile_dir['share'] }}/{{ nvim_profile_name }}" \
-         XDG_CACHE_HOME="{{ nvim_xdg_profile_dir['cache'] }}/{{ nvim_profile_name }}" \
-         {{ nvim_exe }} "$@"

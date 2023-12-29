@@ -1,6 +1,0 @@
----
-extra_bashrc: []
-extra_bashrc_file: "{{ extra_bashrc | join('\n') }}"
-bash_plugins: "{{ dotfiles_user_home }}/.bashrc.d"
-bash_fzf_tab: "{{ bash_plugins }}/fzf-tab-completion"
-bash_git_fuzzy: "{{ bash_plugins }}/git-fuzzy"
