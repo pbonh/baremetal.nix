@@ -1,0 +1,11 @@
+---
+dotfiles_home: "{{ ansible_env.HOME }}"
+dotfiles_user_home: "{{ ansible_env.HOME }}"
+default_home_local: "{{ dotfiles_user_home }}/.local"
+tool_install_dir: "{{ default_home_local }}"
+tool_install_bin: "{{ tool_install_dir }}/bin"
+bin_directory: "{{ tool_install_bin }}"
+gcc_exe: /usr/bin/gcc
+gpp_exe: /usr/bin/g++
+make_exe: make
+dot_download_dir: "{{ tool_install_dir }}/downloads"
