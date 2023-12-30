@@ -31,11 +31,7 @@ rust_file_extensions:
 rust_file_extensions_comma_list: "{{ '\"' + rust_file_extensions |join('\", \"') + '\"' }}"
 rust_dbg: "{{ nix_bin }}/rust-lldb"
 codelldb_extension_url: https://github.com/vadimcn/vscode-lldb.git
-<<<<<<< HEAD
-codelldb_extension_version: "1.9.2"
-=======
 codelldb_extension_version: "1.10.0"
->>>>>>> main
 codelldb_install_path: "{{ dotfiles_user_home }}/.vscode/extensions/vadimcn.vscode-lldb-{{ codelldb_extension_version }}"
 codelldb_bin_path: adapter/codelldb
 codelldb_liblldb_path: lldb/lib/liblldb.so
