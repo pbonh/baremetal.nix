@@ -2,26 +2,26 @@
 rustup_dev_packages:
   rust-src:
     name: rust-src
-    path: "{{ rustup_path }}/../share/doc/rust"
+    path: "{{ rustup_path }}../share/doc/rust"
   clippy:
     name: clippy
-    path: "{{ rustup_path }}/cargo-clippy"
+    path: "{{ rustup_path }}cargo-clippy"
   rust-analyzer:
     name: rust-analyzer
-    path: "{{ rustup_path }}/rust-analyzer"
+    path: "{{ rustup_path }}rust-analyzer"
 rust_dev_packages:
   bacon:
     name: bacon
-    path: "{{ cargo_path }}/bacon"
+    path: "{{ cargo_path }}bacon"
   cargo-edit:
     name: cargo-edit
-    path: "{{ cargo_path }}/cargo-edit"
+    path: "{{ cargo_path }}cargo-edit"
   rustfmt:
     name: rustfmt
-    path: "{{ cargo_path }}/rustfmt"
+    path: "{{ cargo_path }}rustfmt"
   cargo-readme:
     name: cargo-readme
-    path: "{{ cargo_path }}/cargo-readme"
+    path: "{{ cargo_path }}cargo-readme"
 treesitter_parsers_rust:
   - rust
 rust_tools_nix:
@@ -38,8 +38,8 @@ codelldb_liblldb_path: lldb/lib/liblldb.so
 lsp_providers_rust: []
 lsp_providers_rust_setup: []
 rust_extra_lua_plugin_settings: []
-rust_analyzer_exe: "{{ rustup_path }}/rust-analyzer"
-clippy_exe: "{{ rustup_path }}/cargo-clippy"
+rust_analyzer_exe: "{{ rustup_path }}rust-analyzer"
+clippy_exe: "{{ rustup_path }}cargo-clippy"
 extra_nvim_plugins_rust: |
   use { 'simrat39/rust-tools.nvim',
     requires = {
@@ -109,7 +109,7 @@ extra_nvim_config_rust: |
   function cargo_watch_terminal_runner()
     cargo_watch:toggle()
   end
-  local bacon_watch = Terminal:new({ cmd = '{{ cargo_path }}/bacon', close_on_exit = true, hidden = true })
+  local bacon_watch = Terminal:new({ cmd = '{{ cargo_path }}bacon', close_on_exit = true, hidden = true })
   function bacon_watch_terminal_runner()
     bacon_watch:toggle()
   end

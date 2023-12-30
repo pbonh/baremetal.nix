@@ -31,6 +31,6 @@ nvim_macos_download_dir: "{{ dot_download_dir }}"
 nvim_macos_install_dir: "{{ nvim_macos_download_dir }}/{{ nvim_macos_download }}"
 nvim_macos_install_download: "{{ nvim_macos_download_dir }}/{{ nvim_macos_download_archive }}"
 nvim_macos_exe: nvim-macos/bin/nvim
-nvim_exe_default: "{{ bin_directory }}/nvim"
+nvim_exe_default: "{{ bin_directory }}nvim"
 nvim_exe: "{{ nvim_exe_default }}"
 nvim_cmd: "{{ nvim_exe }}"

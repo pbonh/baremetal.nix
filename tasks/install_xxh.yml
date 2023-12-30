@@ -6,6 +6,6 @@
 
 - name: Nix | Install xxh powerlevel10k plugin | command
   command:
-    cmd: "{{ bin_directory }}/xxh +I xxh-plugin-zsh-powerlevel10k"
+    cmd: "{{ bin_directory }}xxh +I xxh-plugin-zsh-powerlevel10k"
   args:
     creates: "{{ xxh_plugin_dir }}/xxh-plugin-zsh-powerlevel10k"

@@ -8,7 +8,7 @@ homebrew_packages_python:
   - zlib
 pyenv_home: "{{ dotfiles_user_home }}/.pyenv"
 pyenv_home_bin: "{{ pyenv_home }}/bin/pyenv"
-pyenv_exe: "{{ bin_directory }}/pyenv"
+pyenv_exe: "{{ bin_directory }}pyenv"
 pyenv_python_version: "3.10.9"
 pyenv_python_exe: "{{ pyenv_home }}/versions/{{ pyenv_python_version }}/bin/python"
 python_tools_nix:

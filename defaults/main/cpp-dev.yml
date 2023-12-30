@@ -42,7 +42,6 @@ vscode_cpptools_extension_json_config: "{{ vscode_cpptools_extension_file_path }
 vscode_cpptools_extension_neovim_json_config: "{{ vscode_cpptools_extension_file_path }}/debugAdapters/bin/nvim-dap.ad7Engine.json"
 gccdiag_url: https://gitlab.com/andrejr/gccdiag
 gccdiag_download: "{{ tool_install_dir }}/gccdiag"
-cargo_path: "{{ ansible_env.HOME }}/.cargo/bin"
-cargo_bin: "{{ cargo_path }}/cargo"
+cargo_bin: "{{ cargo_path }}cargo"
 cargo_cpp_packages:
   - { name: neocmakelsp, path: neocmakelsp }
