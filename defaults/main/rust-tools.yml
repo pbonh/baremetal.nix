@@ -62,7 +62,7 @@ cargo_binstall_packages:
     path: "{{ cargo_path }}dust"
   erdtree:
     name: erdtree
-    path: "{{ cargo_path }}et"
+    path: "{{ cargo_path }}erd"
   eva:
     name: eva
     path: "{{ cargo_path }}eva"
