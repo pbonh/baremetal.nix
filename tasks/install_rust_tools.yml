@@ -37,6 +37,7 @@
   loop: "{{ cargo_binstall_packages | dict2items }}"
 
 - name: Install Cargo/Rust Tools for Rust Development
+  ignore_errors: true
   shell: "{{ rustc_env_variables }} {{ cargo_binstall_exe }} {{ cargo_binstall_args }} --no-confirm {{ item.value.name }}"
   args:
     creates: "{{ item.value.path }}"
