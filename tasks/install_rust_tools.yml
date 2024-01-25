@@ -17,7 +17,7 @@
 
 - name: Rust | Install Rust MUSL Target | shell
   changed_when: false
-  command: "{{ rustup_exe }} target add {{ rustup_musl_target }}"
+  shell: "{{ rustup_exe }} target add {{ rustup_musl_target }}"
   environment: "{{ rust_tools_env }}"
 
 - name: Rust-Tools | Download Cargo Binstall Exe | get_url
@@ -47,5 +47,5 @@
 
 - name: Rust | Update Installed Rust Packages | shell
   changed_when: false
-  command: "{{ cargo_bin }} install-update -a"
+  shell: "{{ cargo_bin }} install-update -a"
   environment: "{{ rust_tools_env }}"
