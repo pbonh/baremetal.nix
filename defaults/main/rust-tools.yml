@@ -4,6 +4,8 @@ rustup_os: linux-gnu
 rustup_macos_arch: aarch64
 rustup_macos_os: apple-darwin
 rustup_url: https://static.rust-lang.org/rustup/rustup-init.sh
+cargo_binstall_url: "https://github.com/cargo-bins/cargo-binstall/releases/latest/download/cargo-binstall-x86_64-unknown-linux-musl.tgz"
+cargo_binstall_download: "{{ dot_download_dir }}/cargo-binstall-x86_64-unknown-linux-musl"
 rustup_script_path: "{{ dotfiles_user_home }}/rustup-init.sh"
 rustup_home_dir: "{{ dotfiles_user_home }}/.rustup"
 rustup_toolchain: "stable"
