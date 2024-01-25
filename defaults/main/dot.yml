@@ -10,3 +10,4 @@ gcc_exe: /usr/bin/gcc
 gpp_exe: /usr/bin/g++
 make_exe: "make"
 dot_download_dir: "{{ tool_install_dir }}/downloads"
+direnv_exe: "{{ tool_system_path }}direnv"

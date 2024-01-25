@@ -22,6 +22,18 @@
     - helix-app
     - editor
 
+- name: Install Direnv App
+  import_tasks: tasks/install_direnv.yml
+  tags:
+    - direnv
+    - env
+
+- name: Install CLI-FM App
+  import_tasks: tasks/install_clifm.yml
+  tags:
+    - clifm
+    - notes
+
 - name: Musl | Install Rust Tools | task
   import_tasks: tasks/install_rust_tools.yml
   tags:
