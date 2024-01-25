@@ -13,8 +13,3 @@
     creates: "{{ item.value.path }}"
   environment: "{{ rust_tools_env }}"
   loop: "{{ rustup_dev_packages | dict2items }}"
-
-- name: Rust | Update Installed Rust Packages | shell
-  changed_when: false
-  command: "{{ cargo_bin }} install-update -a"
-  environment: "{{ rust_tools_env }}"

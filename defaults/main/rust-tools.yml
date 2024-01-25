@@ -25,7 +25,7 @@ cargo_packages:
     path: "{{ cargo_path }}cargo-binstall"
   cargo-update:
     name: cargo-update
-    path: "{{ cargo_path }}cargo-update"
+    path: "{{ cargo_path }}cargo-install-update"
 cargo_binstall_packages:
   atuin:
     name: atuin
