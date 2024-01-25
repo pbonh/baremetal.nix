@@ -29,7 +29,7 @@
 - name: Rust-Tools | Install Cargo Binstall | unarchive
   ansible.builtin.unarchive:
     src: "{{ cargo_binstall_download }}"
-    dest: "{{ cargo_binstall_exe }}"
+    dest: "{{ cargo_path }}"
 
 - name: Rust-Tools | Install Cargo-Update | shell
   shell: "{{ rustc_env_variables }} {{ cargo_binstall_exe }} {{ cargo_binstall_args }} --no-confirm cargo-update"
