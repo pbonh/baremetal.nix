@@ -45,6 +45,12 @@
   tags:
     - python-dev
 
+- name: Musl | Install Rust Development Tools | task
+  when: "'rust' in install_languages"
+  import_tasks: tasks/install_rust_dev.yml
+  tags:
+    - rust-dev
+
 # - name: Nix | Install Nix Home-Manager | task
 #   when: ansible_distribution != 'MacOSX'
 #   import_tasks: tasks/install_home_manager.yml
